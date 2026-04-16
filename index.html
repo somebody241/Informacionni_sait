@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellaris | Space Exploration Timeline</title>
+    <meta name="description" content="Discover the history and future of humanity's journey into the cosmos.">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="bg-mesh"></div>
+
+    <nav>
+        <div class="nav-brand">Stellaris</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="missions.html">Missions</a>
+            <a href="future.html">Future</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <h1>To the Stars</h1>
+        <p>Embark on a journey through time and space. Explore the milestones of human ingenuity that propelled us from
+            Earth to the great unknown.</p>
+        <div style="display: flex; gap: 1rem; animation: fade-up 1s ease 0.4s forwards; opacity: 0;">
+            <a href="timeline.html" class="btn btn-primary">Explore Timeline</a>
+            <a href="missions.html" class="btn btn-outline">View Missions</a>
+        </div>
+    </main>
+
+    <section class="container">
+        <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Humanity's Greatest Adventure</h2>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
+                Since the dawn of time, we have looked up at the night sky with wonder. The space age transformed that
+                wonder into action, pushing the boundaries of what is possible.
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="glass-panel reveal">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary);">The Beginning</h3>
+                <p style="color: var(--text-muted);">From the launch of Sputnik 1 to the first human in space, the
+                    foundations of spaceflight were laid in an era of rapid technological advancement.</p>
+            </div>
+
+            <div class="glass-panel reveal" style="transition-delay: 0.1s;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--secondary);">The Apollo Era</h3>
+                <p style="color: var(--text-muted);">"That's one small step for man, one giant leap for mankind." The
+                    monumental achievement of safely landing humans on the Moon and returning them to Earth.</p>
+            </div>
+
+            <div class="glass-panel reveal" style="transition-delay: 0.2s;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent);">Beyond Earth</h3>
+                <p style="color: var(--text-muted);">Uncrewed probes like Voyager, rovers on Mars, and space telescopes
+                    like Hubble and James Webb unveiling the deepest secrets of the cosmos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Stellaris | A Space Exploration Journey</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

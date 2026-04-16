@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions | Space Exploration</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .missions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .mission-status {
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .status-completed {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+
+        .status-active {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--secondary);
+            border: 1px solid var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="bg-mesh"></div>
+
+    <nav>
+        <div class="nav-brand">Stellaris</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="missions.html" class="active">Missions</a>
+            <a href="future.html">Future</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 8rem;">
+        <h1 style="text-align: center; font-size: 3.5rem; margin-bottom: 1rem;" class="reveal">Iconic Missions</h1>
+        <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem auto;"
+            class="reveal">
+            These missions reshaped our understanding of the universe, pushing the limits of engineering and science.
+        </p>
+
+        <div class="missions-grid">
+            <div class="glass-panel reveal">
+                <span class="mission-status status-completed">Completed</span>
+                <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 0.5rem;">Apollo 11</h3>
+                <h5 style="color: var(--primary); margin-bottom: 1rem;">1969</h5>
+                <p style="color: var(--text-muted);">
+                    The culmination of the space race, Apollo 11 fulfilled the goal of landing a human on the Moon and
+                    safely returning to Earth. The mission carried a plaque bearing the message: "We came in peace for
+                    all mankind."
+                </p>
+            </div>
+
+            <div class="glass-panel reveal" style="transition-delay: 0.1s;">
+                <span class="mission-status status-completed">Completed</span>
+                <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 0.5rem;">Cassini-Huygens</h3>
+                <h5 style="color: var(--primary); margin-bottom: 1rem;">1997 - 2017</h5>
+                <p style="color: var(--text-muted);">
+                    An incredibly successful mission to Saturn. Cassini spent 13 years orbiting the ringed planet, while
+                    the Huygens probe achieved the first landing on a world in the outer solar system (Titan).
+                </p>
+            </div>
+
+            <div class="glass-panel reveal" style="transition-delay: 0.2s;">
+                <span class="mission-status status-active">Active</span>
+                <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 0.5rem;">Voyager Program</h3>
+                <h5 style="color: var(--primary); margin-bottom: 1rem;">1977 - Present</h5>
+                <p style="color: var(--text-muted);">
+                    Voyager 1 and 2 took advantage of a rare planetary alignment to explore the outer solar system. They
+                    carry the Golden Record and are humanity's farthest reaching spacecraft.
+                </p>
+            </div>
+
+            <div class="glass-panel reveal">
+                <span class="mission-status status-active">Active</span>
+                <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 0.5rem;">Hubble Telescope</h3>
+                <h5 style="color: var(--primary); margin-bottom: 1rem;">1990 - Present</h5>
+                <p style="color: var(--text-muted);">
+                    Floating above Earth's atmospheric distortion, Hubble has revolutionized astronomy, helping pin down
+                    the age of the universe and capturing the breathtaking pillars of creation.
+                </p>
+            </div>
+
+            <div class="glass-panel reveal" style="transition-delay: 0.1s;">
+                <span class="mission-status status-active">Active</span>
+                <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 0.5rem;">Curiosity</h3>
+                <h5 style="color: var(--primary); margin-bottom: 1rem;">2012 - Present</h5>
+                <p style="color: var(--text-muted);">
+                    A car-sized rover designed to explore Gale Crater on Mars as part of NASA's Mars Science Laboratory
+                    mission. It determined that ancient Mars could have supported life.
+                </p>
+            </div>
+
+            <div class="glass-panel reveal" style="transition-delay: 0.2s;">
+                <span class="mission-status status-active">Active</span>
+                <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 0.5rem;">James Webb</h3>
+                <h5 style="color: var(--primary); margin-bottom: 1rem;">2021 - Present</h5>
+                <p style="color: var(--text-muted);">
+                    Operating in the infrared spectrum, JWST allows us to see through dust clouds and observe some of
+                    the very first galaxies ever formed, peering deep into the past.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stellaris | A Space Exploration Journey</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
