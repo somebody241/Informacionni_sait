@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Navigation scroll effect
   const nav = document.querySelector('nav');
 
   window.addEventListener('scroll', () => {
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Reveal elements on scroll
   const reveals = document.querySelectorAll('.reveal');
 
   const revealOnScroll = () => {
@@ -26,9 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll(); // Trigger once on load
+  revealOnScroll();
 
-  // Generate dynamic stars background
   const starsContainer = document.querySelector('.stars');
   if (starsContainer) {
     for (let i = 0; i < 150; i++) {
